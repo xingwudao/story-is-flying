@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>故事正在飞</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+    <style>
+      :root {
+        --theme-color: #8f3f2b;
+        --content-max-width: 760px;
+      }
+
+      body {
+        color: #24211f;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans CJK SC",
+          "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      }
+
+      .app-name-link img {
+        border-radius: 8px;
+      }
+
+      .markdown-section {
+        max-width: var(--content-max-width);
+        padding: 28px 24px 48px;
+      }
+
+      .markdown-section h1,
+      .markdown-section h2,
+      .markdown-section h3 {
+        color: #2a2522;
+        letter-spacing: 0;
+      }
+
+      .markdown-section h1 {
+        font-size: 2rem;
+        line-height: 1.25;
+      }
+
+      .markdown-section p {
+        font-size: 1.05rem;
+        line-height: 1.95;
+      }
+
+      .sidebar {
+        background: #fbfaf7;
+      }
+
+      .sidebar ul li a {
+        color: #403a36;
+        line-height: 1.7;
+      }
+
+      @media (max-width: 768px) {
+        .markdown-section {
+          padding: 22px 18px 44px;
+        }
+
+        .markdown-section h1 {
+          font-size: 1.65rem;
+        }
+
+        .markdown-section p {
+          font-size: 1rem;
+          line-height: 1.9;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: "故事正在飞",
+        repo: "xingwudao/story-is-flying",
+        loadSidebar: true,
+        subMaxLevel: 2,
+        auto2top: true,
+        alias: {
+          "/.*/_sidebar.md": "/_sidebar.md"
+        },
+        search: {
+          placeholder: "搜索故事",
+          noData: "没有找到",
+          depth: 3
+        }
+      };
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  </body>
+</html>
